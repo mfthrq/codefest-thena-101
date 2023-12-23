@@ -1,0 +1,21 @@
+{
+    "canisters": {
+        "TokenCanister": {
+            "type": "custom",
+            "main": "src/TokenCanister.ts",
+            "candid": "src/TokenCanister.did",
+            "build": "npx azle TokenCanister",
+            "wasm": ".azle/TokenCanister/TokenCanister.wasm",
+            "gzip": true
+        },
+        "PayoutCanister": {
+            "type": "custom",
+            "main": "src/PayoutCanister.ts",
+            "candid": "src/PayoutCanister.did",
+            "build": "npx azle PayoutCanister",
+            "wasm": ".azle/PayoutCanister/PayoutCanister.wasm",
+            "gzip": true
+        }
+    }
+}
+
